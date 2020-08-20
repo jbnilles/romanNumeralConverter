@@ -1,18 +1,9 @@
 $(document).ready(function () {
-
   $('#romanNumeral').submit(function () {
     event.preventDefault();
-//user
-    //check
-    //inter
+    $('#result').text(integerToRoman(parseInt($('#userInput').val())));
   });
-
 });
-
-
-//  90
-//LXXXX
-//  XC
 
 function integerToRoman (num) {
   const ROMAN = ['I', 'IV','V', 'IX', 'X', 'XL', 'L', 'XC', 'C', 'CD', 'D', 'CM', 'M'];
