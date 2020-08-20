@@ -8,6 +8,16 @@
 
 _{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
 
+### Specs
+| Spec | Input | Output |
+| :-------------     | :------------- | :------------- |
+| **add the value of all the symbols** | 66 |LXVI |
+| **there may not be more than three of the same characters in a row. Instead, you switch to subtraction.** | 90 | XC |
+| **separate ones, tens, hundreds, and thousands**| 99 | XCIX |
+| **check user input for proper entry**| 2.5 | return error |
+
+
+
 ## Setup/Installation Requirements
 
 * _This is a great place_
