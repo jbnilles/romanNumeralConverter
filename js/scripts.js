@@ -4,12 +4,12 @@ $(document).ready(function () {
     $('#result').text(integerToRoman(parseInt($('#userInput').val())));
   });
 });
-
+///        9
 function integerToRoman (num) {
-  const ROMAN = ['I', 'IV','V', 'IX', 'X', 'XL', 'L', 'XC', 'C', 'CD', 'D', 'CM', 'M'];
+  const ROMAN = ['I', 'IV', 'V', 'IX', 'X', 'XL', 'L', 'XC', 'C', 'CD', 'D', 'CM', 'M'];
   const VALUES = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000];
   let result = [];
-  for  (i = ROMAN.length - 1; num > 0 && num <= 3999; i--) {
+  for  (let i = ROMAN.length - 1; num > 0 && num <= 3999; i--) {
     while ( num >= VALUES[i]){
         result.push(ROMAN[i]);
         num -= VALUES[i];
@@ -18,10 +18,7 @@ function integerToRoman (num) {
   return result.join('');
 }
 // function integerToRoman (num) {
-//   const ROMAN = ['I', 'V', 'X', 'L', 'C', 'D', 'M'];
-//   const VALUES = [1, 5, 10, 50, 100, 500, 1000];
 //   let result = [];
-//   let i = ROMAN.length - 1;
 //   while (num > 0) {
 //     if(num >= 1000) {
 //       for(let j = 0; j < num / 1000; j++) {
@@ -30,22 +27,21 @@ function integerToRoman (num) {
 //       }
 //     }
 //     else if (num >= 500) {
-//       if(num >= 900)
+//       if(num >= 900) 
 //       {
 //         result.push('CM');
 //         num -= 900;
 //       }
 //       else
 //       {
-//         for(let j = 0; j < num / 500; j++) {
+1//         for(let j = 0; j < num / 500; j++) {
 //           result.push('D');
 //           num -= 500;
 //         }
 //       }
 //     }
 //     else if (num >= 100){
-//       if(num >= 400)
-//       {
+//       if(num >= 400) {
 //         result.push('CD');
 //         num -= 400;
 //       }
@@ -57,8 +53,7 @@ function integerToRoman (num) {
 //       }
 //     }
 //     else if (num >= 50){
-//       if(num >= 90)
-//       {
+//       if(num >= 90) {
 //         result.push('XC');
 //         num -= 90;
 //       }
